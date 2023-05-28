@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SISTRANModelStoreContainer" CdmEntityContainer="SISTRANEntities">
+    <EntitySetMapping Name="Personas">
+      <EntityTypeMapping TypeName="SISTRANModel.Personas">
+        <MappingFragment StoreEntitySet="Personas">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Documento" ColumnName="Documento" />
+          <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+          <ScalarProperty Name="FechaNacimiento" ColumnName="FechaNacimiento" />
+          <ScalarProperty Name="Correo1" ColumnName="Correo1" />
+          <ScalarProperty Name="Correo2" ColumnName="Correo2" />
+          <ScalarProperty Name="Direccion1" ColumnName="Direccion1" />
+          <ScalarProperty Name="Direccion2" ColumnName="Direccion2" />
+          <ScalarProperty Name="Telefono1" ColumnName="Telefono1" />
+          <ScalarProperty Name="Telefono2" ColumnName="Telefono2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

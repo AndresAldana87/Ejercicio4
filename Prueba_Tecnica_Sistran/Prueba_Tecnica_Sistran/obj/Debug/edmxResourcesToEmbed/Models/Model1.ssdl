@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SISTRANModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Personas">
+    <Key>
+      <PropertyRef Name="Documento" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Documento" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="Nombres" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Apellidos" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FechaNacimiento" Type="date" Nullable="false" />
+    <Property Name="Correo1" Type="varchar" MaxLength="100" />
+    <Property Name="Correo2" Type="varchar" MaxLength="100" />
+    <Property Name="Direccion1" Type="varchar" MaxLength="100" />
+    <Property Name="Direccion2" Type="varchar" MaxLength="100" />
+    <Property Name="Telefono1" Type="nvarchar" MaxLength="10" />
+    <Property Name="Telefono2" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityContainer Name="SISTRANModelStoreContainer">
+    <EntitySet Name="Personas" EntityType="Self.Personas" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
